@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #19222c;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #d4af37, #ffd700, #c5a600, #ffd700, #d4af37);
+    color: black;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.entrar {
+    border-radius: 10px;
+    width: 120%;
+    padding: 10px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #d4af37, #ffd700, #c5a600, #ffd700, #d4af37);
+}
+
+.entrar:hover {
+    background: #0c223c;
+    color: #cdaf05;
+}
+
+@keyframes gold-shimmer {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(7, 2, 11);
+    align-items: center;
+
+}
+
+.fundo_igreja {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.boas_vindas {
+
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    text-align: center;
+    color: linen;
+}
+
+.boas_vindas span {
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    text-shadow: 0 5px 30px rgb(160, 4, 212);
+}
+
+.card-horario {
+    width: 10rem;
+    height: 7rem;
+    border-radius: 10px;
+    background-color: #d4af37;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    left: 5rem;
+    top: 38%;
+}
+
+.horarios {
+    color: #0c223c;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.card-horario p {
+    text-align: center;
+    color: linen;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ____________main___________________ */
+
+main {
+    margin: 0 40px;
+    padding: 0 30px;
+
+    color: #dae0e3;
+
+}
+
+/* ____________Sessão dos cards___________________ */
+
+#sessao-cards {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+}
+
+.card {
+    width: 16%;
+    height: 300px;
+
+}
+
+.card:nth-of-type(3) {
+    width: 23%;
+    height: 350px !important;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.imagem-destaque {
+    width: 100%;
+    height: 200px !important;
+}
+
+.titulos-card {
+    text-align: center;
+    padding: 0 7px;
+    font-size: 1.3rem;
+    color: #b6b5b9;
+}
+
+.descricao {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 50%;
+    padding: 10px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #d4af37, #ffd700, #c5a600, #ffd700, #d4af37);
+
+}
+
+#assistir {
+    background: rgb(174, 28, 28);
+    color:#dae0e3;
+}
+
+.btn:hover, #assistir:hover {
+    color: #cdaf05;
+    background: #0c223c;
+    transform: scale(1.05);
+    
+}
+
+#sobre,
+#fotos {
+    margin-top: 120px;
+}
+
+/* ____________Rodapé___________________ */
+footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    bottom: 0;
+    background-color: rgb(5, 5, 5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer {
+    color: #cdaf05;
+    text-align: center;
+
+}
+
+i {
+    color: #cdaf05;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+i:hover {
+    color: rgb(123, 123, 232);
+}
+
+@media only screen and (max-width: 800px) {
+    #cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+
+    .card:nth-child(3) {
+        order: -1;
+        width: 100%;
+    }
+    .imagem-destaque{
+        height: 15rem;
+    }
+
+    .boas_vindas {
+        font-size: 1.3rem;
+        top: 15%;
+    }
+
+    .card-horario {
+        width: 10rem;
+        height: 7rem;
+        border-radius: 10px;
+        padding: 2px;
+        position: absolute;
+        top: 30%;
+        left: 2em;
+    }
+
+    .card-horario p,
+    .card-horario h3 {
+        font-size: 1.1rem;
+
+    }
+
+
+}
