@@ -243,8 +243,8 @@ i:hover {
 
 @media only screen and (max-width: 800px) {
     main{
-        margin: 0 5px;
-            padding: 0 10px;
+        margin: 0;
+            padding: 0;
     }
     #sessao-cards {
         flex-wrap: wrap;
