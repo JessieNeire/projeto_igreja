@@ -266,23 +266,23 @@ i:hover {
     }
 
     .boas_vindas {
-        font-size: 1.3rem;
-        top: 15%;
+        font-size: 1rem;
+        top: 10%;
     }
 
     .card-horario {
         width: 10rem;
-        height: 7rem;
+        height: 6rem;
         border-radius: 10px;
         padding: 2px;
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 2em;
     }
 
     .card-horario p,
     .card-horario h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
 
     }
 
