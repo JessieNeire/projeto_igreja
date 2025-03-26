@@ -254,6 +254,7 @@ i:hover {
         width: 50%;
         margin-bottom: 50px;
         margin-top: 15px;
+        padding: 10px;
     }
 
     .card:nth-child(3) {
